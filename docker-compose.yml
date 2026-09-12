@@ -1,0 +1,13 @@
+services:
+  oncorag-api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Keep the embedding cache on the host so you don't re-embed every
+      # rebuild during local development.
+      - ./cache:/app/cache
+      - ./data:/app/data
+    restart: unless-stopped

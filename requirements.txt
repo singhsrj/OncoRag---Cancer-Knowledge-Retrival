@@ -1,0 +1,12 @@
+# Existing OncoRag pipeline deps (mirrors pyproject.toml)
+django>=6.1.1
+djangorestframework>=3.18.1
+numpy>=2.5.3
+pymupdf>=1.28.2
+python-dotenv>=1.2.3
+requests>=2.34.2
+
+# Added for the web server
+django-cors-headers>=4.4.0
+whitenoise>=6.7.0
+gunicorn>=23.0.0

@@ -1,0 +1,14 @@
+.git
+.gitignore
+.venv
+venv
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache
+.env
+*.sqlite3
+frontend/
+node_modules/
+*.md
+!README_DEPLOY.md
