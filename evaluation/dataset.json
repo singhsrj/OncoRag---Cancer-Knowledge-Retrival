@@ -1,0 +1,104 @@
+[
+  {
+    "query": "What are the risk factors for breast cancer?",
+    "topic": "breast_cancer",
+    "relevant_chunk_ids": [
+      "data\\breast_cancer.pdf::Who is at risk?::0",
+      "data\\breast_cancer.pdf::Who is at risk?::1",
+      "data\\breast_cancer.pdf::Who is at risk?::2"
+    ]
+  },
+  {
+    "query": "What are the symptoms of breast cancer?",
+    "topic": "breast_cancer",
+    "relevant_chunk_ids": [
+      "data\\breast_cancer.pdf::Symptoms::0",
+      "data\\breast_cancer.pdf::Symptoms::1",
+      "data\\breast_cancer.pdf::Symptoms::2"
+    ]
+  },
+  {
+    "query": "What causes cervical cancer?",
+    "topic": "cervical_cancer",
+    "relevant_chunk_ids": [
+      "data\\cervical_cancer.pdf::Causes::0",
+      "data\\cervical_cancer.pdf::Causes::1"
+    ]
+  },
+  {
+    "query": "How can cervical cancer be prevented?",
+    "topic": "cervical_cancer",
+    "relevant_chunk_ids": [
+      "data\\cervical_cancer.pdf::Prevention::0",
+      "data\\cervical_cancer.pdf::Prevention::1",
+      "data\\cervical_cancer.pdf::HPV vaccination and other prevention steps::0",
+      "data\\cervical_cancer.pdf::HPV vaccination and other prevention steps::1"
+    ]
+  },
+  {
+    "query": "What causes cancer in children?",
+    "topic": "childhood_cancer",
+    "relevant_chunk_ids": [
+      "data\\childhood_cancer.pdf::Causes::0",
+      "data\\childhood_cancer.pdf::Causes::1",
+      "data\\childhood_cancer.pdf::Causes::2"
+    ]
+  },
+  {
+    "query": "How is childhood cancer treated?",
+    "topic": "childhood_cancer",
+    "relevant_chunk_ids": [
+      "data\\childhood_cancer.pdf::Treatment::0",
+      "data\\childhood_cancer.pdf::Treatment::1"
+    ]
+  },
+  {
+    "query": "What are the risk factors for colorectal cancer?",
+    "topic": "colorectal_cancer",
+    "relevant_chunk_ids": [
+      "data\\colorectal_cancer.pdf::Risk factors::0"
+    ]
+  },
+  {
+    "query": "What are the symptoms of colorectal cancer?",
+    "topic": "colorectal_cancer",
+    "relevant_chunk_ids": [
+      "data\\colorectal_cancer.pdf::Symptoms::0",
+      "data\\colorectal_cancer.pdf::Symptoms::1"
+    ]
+  },
+  {
+    "query": "How can HPV infection be prevented?",
+    "topic": "human_papillomavirus_cancer",
+    "relevant_chunk_ids": [
+      "data\\human_papillomavirus_cancer.pdf::Prevention::0",
+      "data\\human_papillomavirus_cancer.pdf::Prevention::1",
+      "data\\human_papillomavirus_cancer.pdf::Prevention::2"
+    ]
+  },
+  {
+    "query": "What are the symptoms of an HPV infection?",
+    "topic": "human_papillomavirus_cancer",
+    "relevant_chunk_ids": [
+      "data\\human_papillomavirus_cancer.pdf::Symptoms::0",
+      "data\\human_papillomavirus_cancer.pdf::Symptoms::1"
+    ]
+  },
+  {
+    "query": "What are the risk factors for lung cancer?",
+    "topic": "lung_cancer",
+    "relevant_chunk_ids": [
+      "data\\lung_cancer.pdf::Risk factors::0"
+    ]
+  },
+  {
+    "query": "How is lung cancer treated?",
+    "topic": "lung_cancer",
+    "relevant_chunk_ids": [
+      "data\\lung_cancer.pdf::Treatment::0",
+      "data\\lung_cancer.pdf::Treatment::1",
+      "data\\lung_cancer.pdf::Treatment::2",
+      "data\\lung_cancer.pdf::Treatment::3"
+    ]
+  }
+]

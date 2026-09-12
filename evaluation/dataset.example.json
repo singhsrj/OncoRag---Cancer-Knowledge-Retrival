@@ -1,0 +1,15 @@
+[
+  {
+    "query": "What are the risk factors for lung cancer?",
+    "topic": "lung_cancer",
+    "relevant_chunk_ids": [
+      "lung_cancer.pdf::Risk Factors::0",
+      "lung_cancer.pdf::Risk Factors::1"
+    ]
+  },
+  {
+    "query": "How is breast cancer typically diagnosed?",
+    "topic": "breast_cancer",
+    "relevant_chunk_ids": []
+  }
+]
