@@ -170,23 +170,4 @@ curl -X POST http://localhost:8000/api/query/ \
 
 # 5. Evaluate retrieval/generation quality
 uv run python eval_retriever.py evaluation/dataset.json --k 1 3 5 7
-```
 
-Full details: [`README_DEPLOY.md`](./README_DEPLOY.md) and [`EVAL_README.md`](./EVAL_README.md).
-
----
-
-## Honest limitations (I'd rather flag these than have them found)
-
-- Brute-force NumPy cosine similarity, not a vector database — appropriate at this corpus size (a handful of PDFs), but the natural next step if the corpus grew would be swapping `knowledgebase/retrieval.py`'s internals for `pgvector`/FAISS behind the same function signature.
-- `knowledgebase/models.py` is intentionally empty — chunk/embedding storage moved from a DB-backed model to flat JSON caching for simplicity; the file is kept as the natural landing spot for future Django-native data (saved conversations, accounts).
-- `RAG_DEFAULT_TOP_K` is defined in settings but not yet wired into `rag_api/views.py` (still hardcodes `3` as the request-body fallback) — a one-line fix, left as a known TODO rather than silently "fixed" without a real settings-driven config pass.
-- No auth/rate-limiting on `/api/query/` yet — fine for local dev and evaluation, would need adding before any public-facing deployment given it triggers paid LLM calls per request.
-
----
-
-## Why this maps to the Morphle role
-
-The JD asks for exactly this shape of work: *"building and improving web-based software,"* *"backend APIs and services using Django and Python,"* *"modular, web-API-based software architecture,"* *"understand and work with large-scale image/data-heavy applications,"* and — most of all — *"someone who enjoys understanding complex systems, debugging difficult problems, and building products rather than simply completing assigned tasks."*
-
-This project is that in miniature: a document-heavy domain (PDFs instead of pathology slides, but the same "structure matters, don't treat it as a blob" instinct), a Django/REST backend built to be consumed by a separate frontend, and — the part most portfolio projects skip — a self-evaluation system that answers "how do I actually know this works?" instead of assuming it does.
