@@ -1,0 +1,48 @@
+:root {
+  --paper: #f7f5f0;
+  --ink: #1c1d1b;
+  --ink-soft: #55564f;
+  --line: #dcd9cf;
+  --accent: #0f5c4f;
+  --accent-soft: #e3ece9;
+  --accent-strong: #0a3e35;
+  --error: #9a3324;
+  --error-soft: #f7e9e5;
+
+  font-family: 'Inter', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

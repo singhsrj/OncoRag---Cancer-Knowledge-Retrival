@@ -3,9 +3,9 @@
     "query": "What are the risk factors for breast cancer?",
     "topic": "breast_cancer",
     "relevant_chunk_ids": [
-      "data\\breast_cancer.pdf::Who is at risk?::0",
-      "data\\breast_cancer.pdf::Who is at risk?::1",
-      "data\\breast_cancer.pdf::Who is at risk?::2"
+      "data/breast_cancer.pdf::Who is at risk?::0",
+      "data/breast_cancer.pdf::Who is at risk?::1",
+      "data/breast_cancer.pdf::Who is at risk?::2"
     ]
   },
   {
